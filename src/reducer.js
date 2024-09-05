@@ -19,6 +19,16 @@ export const reducer = (state = initialState, { type, payload }) => {
 				...state,
 				field: payload,
 			};
+		case 'SET_DRAW':
+			return {
+				...state,
+				isDraw: payload,
+			};
+		case 'SET_GAME_ENDED':
+			return {
+				...state,
+				isGameEnded: payload,
+			};
 		case 'RESTART_GAME':
 			return initialState;
 		default:
