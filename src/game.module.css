@@ -5,4 +5,5 @@
 .button-reset {
 	font-size: 25px;
 	background-color: aquamarine;
+	cursor: pointer;
 }
